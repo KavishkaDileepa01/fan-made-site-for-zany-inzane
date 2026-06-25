@@ -156,11 +156,5 @@ document.querySelectorAll(".filter").forEach((button) => {
   });
 });
 
-document.querySelector("#contact-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  document.querySelector("#form-note").textContent = "Request captured. Connect this form to your booking inbox before launch.";
-  event.currentTarget.reset();
-});
-
 renderTracks();
 bindAnimatedButtons();
